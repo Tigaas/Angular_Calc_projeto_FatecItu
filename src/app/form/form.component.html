@@ -1,7 +1,15 @@
 <form>
-<input>
-<input>
-<button>somar</button>
-<label></label>
+<input type="number" [(ngModel)]="num1" name="num1">
+<input type="number" [(ngModel)]="num2" name="num2">
+
+    <label>{{sum}}</label>
+    
+<button (click)="onClicksum()">+</button>
+<button (click)="op1()">-</button>
+<button (click)="op2()">X</button>
+<button (click)="op3()">÷</button>
+<button (click)="op5()">^</button>
+<button (click)="op4()">AC</button>
+
 
 </form>
